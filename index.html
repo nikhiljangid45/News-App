@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- menu button  -->
+    <nav>
+      <div class="main-div container flex">
+        <a href="#" class="company-log">
+          <img src="images/logos.png" alt="company logo" class="company-logo" />
+        </a>
+        <div class="nav-link">
+          <ul class="flex">
+            <li
+              class="hover-link nav-item"
+              id="ipl"
+              onclick="navItemClick('ipl')"
+            >
+              IPL
+            </li>
+            <li
+              class="hover-link nav-item"
+              id="finance"
+              onclick="navItemClick('finance')"
+            >
+              Finance
+            </li>
+            <li
+              class="hover-link nav-item"
+              id="politics"
+              onclick="navItemClick('politics')"
+            >
+              Politics
+            </li>
+          </ul>
+        </div>
+
+        <div class="search-bar">
+          <input type="text" class="news-input" placeholder="e.g Science" />
+          <button class="search-button">Search</button>
+        </div>
+      </div>
+    </nav>
+    <!-- main section  -->
+    <main>
+      <div class="card-container container flex" id="card-container"></div>
+    </main>
+
+    <template class="templet-news-card" id="templet-news-card">
+      <div class="card">
+        <div class="card-header">
+          <img
+            src="images/Screenshot 2024-03-30 212432.png"
+            alt="image is note  herer "
+            id="news-img"
+          />
+        </div>
+        <div class="card-content">
+          <h3 id="news-title">This is the titile</h3>
+          <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+          <p class="news-desc" id="news-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+            facilis fugiat necessitatibus minus cumque mollitia quidem magni,
+            sunt quod sed.
+          </p>
+        </div>
+      </div>
+    </template>
+
+    <script src="script.js"></script>
+  </body>
+</html>
